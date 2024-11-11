@@ -4,15 +4,16 @@ const coding =["js","rb","py","java","php","swift"]
 // coding.forEach( (item) =>{
 //     console.log(item)
 // })
-const values = coding.forEach( (item) =>{
-    // console.log(item)
-    return item
-})
+
+// const values = coding.forEach( (item) =>{
+//     console.log(item)
+//     return item
+// })
 
 // console.log(values); // foreach return nothing! 'undefined'
 // what if we want to return value ??
 
-const myNum = [1,2,3,4,5,6,7,8,9,10]
+// const myNum = [1,2,3,4,5,6,7,8,9,10]
 
 // const newNums = myNum.filter( (num) => num > 4)
 
@@ -62,4 +63,12 @@ const userBooks =  books.filter( (book) => {
 
 })
 
-console.log(userBooks)
+const newBook = books.filter((bk) => {
+   
+ return bk.genre === 'Science' && bk.edition >= 2010
+
+}
+)
+
+console.log(newBook)
+// console.log(userBooks)

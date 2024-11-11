@@ -7,10 +7,9 @@ const value = myNumbers.reduce( (acc,curr) =>{
 
     console.log(`acc : ${acc} and currVal : ${curr}`)
     return acc + curr
-    
+
 },0)
 console.log(value)
-
 
 const shoppingCart = [
     {
@@ -30,10 +29,13 @@ const shoppingCart = [
         price: 12999
     },
 ]
-//add all price of courses ...
+
+//add all price of courses...
  const total = shoppingCart.reduce( (acc,curr) => {
       return acc + curr.price
 },0)
+
+ total = shoppingCart.reduce( (acc,curr) => acc + curr.price,0)
 
 // const total = shoppingCart.reduce( (acc,curr) => acc + curr.price,0)
 

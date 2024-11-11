@@ -29,7 +29,12 @@ const mycoding = [
         languageFileName:"java"
     }
 ]
+
+ mycoding.map((item) => console.log(`${item.language}`));
+
+// console.log(newLan)
 mycoding.forEach((item)=>{
-   console.log(`Language :- ${item.language} and File Name :- ${item.languageFileName}`)
+//    console.log(`Language :- ${item.language} and File Name :- ${item.languageFileName}`)
+      console.log(`${item.language}`)
 })
 
