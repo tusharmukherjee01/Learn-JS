@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li>JavaScript</li>
+        
+    </ul>
+</body>
+<script>
+  
+  function addLanguage(langName){
+    const li = document.createElement('li')
+    li.innerHTML = `${langName}`
+    document.querySelector('.language').appendChild(li)
+  }
+  addLanguage("Python")
+  addLanguage("Java")
+
+  function addOptiLanguage(langName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(`${langName}`))
+    document.querySelector('.language').appendChild(li)
+  }
+  addOptiLanguage("React")
+
+  //Edit
+  const secondLang = document.querySelector("li:nth-child(2)")
+//   secondLang.innerHTML = "C++"
+     const newLi = document.createElement('li')
+     newLi.textContent = "Django"
+     secondLang.replaceWith(newLi)
+
+     //edit2
+     const firstLang = document.querySelector("li:first-child")
+//   secondLang.innerHTML = "C++"
+       firstLang.outerHTML = "<li>TypeScript</li>"
+     const newlist = document.createElement('li')
+     newlist.textContent = "TypeScript"
+     firstLang.replaceWith(newlist)
+
+     //remove
+     const lastLang = document.querySelector("li:last-child")
+     lastLang.remove()
+</script>
+</html>
