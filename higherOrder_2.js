@@ -13,15 +13,15 @@ const myObject ={
 
 for (const key in myObject) {
     
-        // console.log(`${key} shortcut is for ${myObject[key]}`);
+        console.log(`${key} shortcut is for ${myObject[key]}`);
     }
-const programming =["js","rb","py","java","php","swift"]
+// const programming =["js","rb","py","java","php","swift"]
 
-for (const key in programming) {
+// for (const key in programming) {
     
-    console.log(key);
-    console.log(programming[key])
+//     console.log(key);
+//     console.log(programming[key])
         
-}
+// }
 
 

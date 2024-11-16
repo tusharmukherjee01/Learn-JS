@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clouser</title>
+</head>
+<body style="background-color: #212121">
+  
+</body>
+<script>
+
+// function init() {
+//     let name = "Mozilla";
+//        function displayName() {
+//        console.log(name); 
+//   }
+//   displayName();
+// }
+// init();
+
+   function outer(){
+    let username = "Tushar"
+    //  console.log(secret) can't access
+    function inner(){
+      let secret = "my123"
+      console.log("Inner",username)
+    }
+    function innerTwo(){
+      // console.log(secret) // can't access 
+      console.log(username)
+    }
+    inner()
+    innerTwo();
+   }
+   outer()
+   console.log("TOO OUTER :", username)
+
+</script>
+</html>
