@@ -30,7 +30,7 @@ myHeros.heyTushar()
 // heroPower.heyTushar()
 
 
-*/ Inheritane */
+*/ Inheritance */
 
 const User = {
     name:"chai",

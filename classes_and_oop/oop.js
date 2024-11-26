@@ -28,3 +28,4 @@ console.log(userOne)
 console.log(userTwo)
 
 
+// if don't use new keyword value will be override 

@@ -30,6 +30,6 @@ const iphone = new Teacher("@chai.com","Tushar")
 
 iphone.logMe()
 
-// console.log(iphone.createId())
-// console.log(User.createId())  thats how you can use static methods or variable
-// console.log(Teacher.createId())
+console.log(iphone.createId())
+console.log(User.createId())   //thats how you can use static methods or variable
+console.log(Teacher.createId())

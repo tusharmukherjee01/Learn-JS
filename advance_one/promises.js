@@ -96,7 +96,7 @@ async function getAllUsers() {
      console.log(error)
    }
 }
-// getAllUsers()
+getAllUsers()
 
 fetch('https://jsonplaceholder.typicode.com/user').then((res)=>{
     return   res.json()
