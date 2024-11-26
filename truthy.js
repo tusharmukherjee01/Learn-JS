@@ -45,7 +45,6 @@ console.log(val1);
 val2 = null ?? 10 ?? 20 ?? 30;  // whatever is not null first value will be printed
 console.log(val2);
 
-
 // Ternary operator
 
 console.log(0 ? "true" : "false");
