@@ -9,7 +9,7 @@ const user={
     // }
     welcomemsg:() => {
         // console.log(`${this.username} welcome to website`);
-        console.log(this);
+        // console.log(this);
     }
 }
 user.welcomemsg()
@@ -27,8 +27,8 @@ chai()
 // Arrow Function..
 const chai2 = () => {
     let username = "Tushar"
-    console.log('---->>>ARROW FUNCTION',this)
-    console.log(this.username);
+    // console.log('---->>>ARROW FUNCTION',this)
+    // console.log(this.username);
 }
 chai2()
 

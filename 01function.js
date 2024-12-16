@@ -37,3 +37,14 @@ function returnSecondValue(anyArray){
 console.log(returnSecondValue(myNewArray));
 
 console.log(returnSecondValue([40,50,60,70]));
+
+// function calculateCartPrice(num){
+//     return num
+// }
+
+function calculateCartPrice(val1,val2,...num){
+    console.log("val1 :",val1,"val2:",val2);
+    return num
+}
+
+console.log(calculateCartPrice(200,400,600,800,8000,700));

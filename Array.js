@@ -25,7 +25,7 @@ const myarray = new Array(1,2,3,4,6,"Tushar")
 // console.log('Slice :')
 // console.log("A->",myarray)
 
-// const myn1 = myarray.slice(1,3) // 1,2 and 3 not included
+// const myn1 = myarray.slice(1,3) // 1,2 and , 3 not included
 
 // console.log(myn1)
 
@@ -35,15 +35,13 @@ const myarray = new Array(1,2,3,4,6,"Tushar")
 // console.log('Splice :')
 // console.log("A->",myarray)
 
-// const myn2 = myarray.splice(1,3) // 1,2 and 3 also included.. which is not in slice
+// const myn2 = myarray.splice(1,3) // 1,2 and , 3 also included.. which is not in slice
 
 // console.log(myn2)
 
 // console.log("B->",myarray)
 
-
 // console.log(myarray)
-
 
 const a = ["a","b","c"]
 const b = ["x","y","z"]
