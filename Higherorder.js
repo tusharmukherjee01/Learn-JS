@@ -2,8 +2,8 @@
 
 const myNewArray = [200,400,500,2000]
 
-for (const num of myNewArray) {
-    // console.log(num);
+for(const num of myNewArray){
+    // console.log(num)
 }
 
 const greetings = "Hello Tushar"
@@ -19,10 +19,11 @@ const map = new Map()
 map.set("IN", "India")
 map.set("USA", "United States of America")
 map.set("FR", "France")
-// console.log(map);
+map.set("Uk","England")
+console.log(map);
 
 for (const [key, value] of map) {
-    // console.log(key,':-' , value);
+    console.log(key,':-' , value);
 }
 
 for (const key in map) {
