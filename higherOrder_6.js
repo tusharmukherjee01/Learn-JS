@@ -31,11 +31,11 @@ const shoppingCart = [
 ]
 
 //add all price of courses...
- const total = shoppingCart.reduce( (acc,curr) => {
-      return acc + curr.price
-},0)
+ const total = shoppingCart.reduce((acc,curr) => {
+    return acc+curr.price;
+ },0)
 
- total = shoppingCart.reduce( (acc,curr) => acc + curr.price,0)
+//  total = shoppingCart.reduce( (acc,curr) => acc + curr.price,0)
 
 // const total = shoppingCart.reduce( (acc,curr) => acc + curr.price,0)
 
