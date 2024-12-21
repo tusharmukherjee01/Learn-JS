@@ -14,8 +14,8 @@
 <body class="bg-black">
     <div>
         <h1 id="title" class="heading"> Dom Learning Chai aur Code
-            <span style="display:none">by Tushar</span>
-        </h1>
+            <span style="display:none">by Tushar</span>     // diference between => textContent always have whole text dose't matter "style="display:none"" or something like that but in case of innerText only have the visible one
+        </h1>                                               // in case of innerHTML => will give whole html tag also with text data
         <h1>Lorem ipsum dolor sit.</h1>
         <h1>Lorem ipsum dolor sit amet consectetur.</h1>
         <h2>Lorem, ipsum.</h2>
@@ -23,14 +23,18 @@
         <input type="password" name="password" id="">
 
         <ul class="list-item">
-            <li>onr</li>
-            <li>Two</li>
-            <li>three</li>
-            <li>four</li>
-            <li>five</li>
+            <li class="list-item">one</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+            <li class="list-item">five</li>
         </ul>
     </div>
     <div> Tushar </div>
     
 </body>
 </html>
+
+
+// diffrence between querySelector  and querySelectorall => querySelector => only first element and querySelectorall => all elements in a NodeList [like array] not array => array methods not work(forEach work check in prototype what methods available) just exam. => temp is a nodelist then {temp[0].style.color = "red"} like that i have to write 
+// getElementsByClassName => give HTML collection here array methods not work , have to convert into array => Array.from(temp).forEach((element) => {element.style.color = "red"}) || temp is a HTML collection

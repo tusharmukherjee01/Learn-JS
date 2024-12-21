@@ -11,12 +11,13 @@
 <script>
 
     const h1 = document.createElement("h1")
+    console.log(h1)
     h1.className = "main"
     h1.id = Math.round(Math.random()*10 + 1)
-    h1.setAttribute("title", "Tushar")
+    h1.setAttribute("title", "Tushar")   // setAttribute => set any attribute little bit opimized as compare to 
     h1.style.backgroundColor = "orange"
     h1.padding = "20px"
-   const addText = document.createTextNode("Tushar Mukherjee")
+   const addText = document.createTextNode("Tushar Mukherjee") // create text node = optimized that div.innerHTML = "Tushar Mukherjee" because it acctually select element then override the element but in case of text node it will create a text node and then append it to the element => niye asar iteration ta save hoy
    h1.appendChild(addText)
    document.body.appendChild(h1)
 

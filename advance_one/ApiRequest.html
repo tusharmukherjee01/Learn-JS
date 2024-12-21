@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>XML</title>
 </head>
 <body>
-    
+    <h1>Before Fetch/Axios How API call handeled!</h1>
 </body>
+
+<script>
+
+ const url = "https://api.github.com/users/hiteshchoudhary"
+
+ const xhr = new XMLHttpRequest()
+
+ xhr.open('GET',url)
+
+ xhr.onreadystatechange = function(){
+    console.log(xhr.readyState)
+
+    if(xhr.readyState === 4){
+     console.log('TTTT')
+        const data = JSON.parse(this.responseText) // api response comes as string have to convert it in JSON object
+       
+        console.log(data)
+        console.log(data.followers);
+    }
+ }
+
+xhr.send()
+</script>
 </html>
