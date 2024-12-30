@@ -61,11 +61,15 @@ Object.setPrototypeOf(TeachingSupport,Teacher) //
 
 let anotherUserName = "chaiaurcode          "
 
-String.prototype.trueLength = function(){
-     console.log(`${this}`)
-    //  console.log(`${this.name}`)
-     console.log(`True length is: ${this.trim().length}`)
+Object.prototype.trueLength = function(){
+     console.log(this)
+    console.log(`The True Length is :- ${this.trim().length}`)
 }
+
+// String.prototype.trueLength = function(){
+
+//     console.log(`The True Length is :- ${this.trim().length}`)
+// }
 
 anotherUserName.trueLength()
 "tushar".trueLength()

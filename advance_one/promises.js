@@ -86,20 +86,99 @@
 // consumePromiseFive()
 
 
-async function getAllUsers() {
-   try{
-   const response =  await fetch('https://jsonplaceholder.typicode.com/user')
-//    console.log(response)
-   const data = await response.json()
-   console.log(data)
-   }catch(error){
-     console.log(error)
-   }
-}
-getAllUsers()
+// async function getAllUsers() {
+//    try{
+//    const response =  await fetch('https://jsonplaceholder.typicode.com/user')
+// //    console.log(response)
+//    const data = await response.json()
+//    console.log(data)
+//    }catch(error){
+//      console.log(error)
+//    }
+// }
+// getAllUsers()
 
-fetch('https://jsonplaceholder.typicode.com/user').then((res)=>{
-    return   res.json()
-})
-.then((data) => console.log(data))
-.catch((error)=>{console.log(error)})
+// fetch('https://jsonplaceholder.typicode.com/user').then((res)=>{
+//     return   res.json()
+// })
+// .then((data) => console.log(data))
+// .catch((error)=>{console.log(error)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const prmiseX = new Promise((res,rej) =>{
+//    setTimeout(()=>{
+//       let error = true
+//       if(!error){
+//       res({username:"Tushar",age:"23"})
+//       }
+//    else{
+//       rej("ERROR:Something Went Wrong!")
+//    }
+//    },2000)
+// })
+
+// prmiseX.then((user) =>{
+//    console.log(user)
+//    return user.username
+// }).then((username) => {
+//    console.log(username)
+// }).catch((err)=>{
+//    console.log(err)
+// })
+
+
+// const prmiseY = new Promise((res,rej) =>{
+//    setTimeout(()=>{
+//       let error = true
+//       if(!error){
+//       res({username:"Javascript",age:"23"})
+//       }
+//    else{
+//       rej("ERROR:JS Went Wrong!")
+//    }
+//    },2000)
+// })
+
+// async function consumePromiseFive(){
+//   try{
+//    const response = await prmiseY
+//   console.log(response)
+//   }catch(err){
+//    console.log('ERROR',err)
+//   }
+// }
+
+// consumePromiseFive()
+
+
+// async function getAllUser(){
+
+//    try {
+//       const response = await fetch('https://jsonplaceholder.typicode.com/user')
+   
+//       console.log(response)
+//    const data = await response.json()
+
+//    console.log(data)
+//    } catch (error) {
+//       console.log(error)
+//    }
+// }
+// // getAllUser()
+
+// fetch('https://jsonplaceholder.typicode.com/user').then((res) => res.json()).then((data) => console.log(data)).catch((err)=>console.log(err))

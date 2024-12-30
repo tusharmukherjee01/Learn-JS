@@ -20,7 +20,7 @@ const chai = {
 
 console.log(Object.getOwnPropertyDescriptor(chai,"name"))
 
-Object.defineProperty(chai,"name",{
+Object.defineProperty(chai,"name",{  //writable:false means you can't change value and same way enumerable:false means you can't iterate over that property
     writable:false,
     enumerable:false
 })

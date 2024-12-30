@@ -24,7 +24,8 @@ createUser.prototype.printMe = function(){
 const chai = new createUser('chai',10)
 const tea =   createUser('tea',250)
 
-chai.printMe()
+chai.incrementScore()
+chai.printMe()he
 
 
 /*

@@ -1,6 +1,6 @@
 # javascript and classes
 
-## oop 
+# oop 
 
 ## object
 - collection of properties and methods

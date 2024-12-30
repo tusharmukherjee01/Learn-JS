@@ -20,12 +20,15 @@ function User(username,loginCunt,signedIn){
     this.loginCunt = loginCunt;
     this.signedIn = signedIn;
     
+    this.greeting = function(){
+        console.log(`Welcome ${this.username}`)
+    }
 }
 
 const userOne = new User("Tushar",8,true);
 const userTwo = new User("Debu",8,true);
 console.log(userOne)
 console.log(userTwo)
-
+console.log(userOne.constructor)
 
 // if don't use new keyword value will be override 

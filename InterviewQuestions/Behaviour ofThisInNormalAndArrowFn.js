@@ -20,14 +20,14 @@ const obj2 = {
   regularFunction: function () {
     // Regular function inside another regular function
     function innerFunction() {
-      console.log('Inner Function (Regular):', this.name);
+      console.log('Inner Function (Regular):', this.name);  // this pointing to window object and window object does't have anything like "name"
     }
     innerFunction();
   },
   arrowFunction: function () {
     // Arrow function inside a regular function
     const innerArrowFunction = () => {
-      console.log('Inner Function (Arrow):', this.name);
+      console.log('Inner Function (Arrow):', this.name); // in case of arrow function it is pointing to currect contest
     };
     innerArrowFunction();
   }

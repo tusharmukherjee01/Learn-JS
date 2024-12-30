@@ -17,4 +17,4 @@ const User={
 
 const tea = Object.create(User)
 
-console.log(tea.email)    // callin this email function not 
+console.log(tea.email)    // call in this email function not 

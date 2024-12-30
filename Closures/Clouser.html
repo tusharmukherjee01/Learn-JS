@@ -49,8 +49,7 @@
 
 /* just run once this upper code you will understand clearly what is problem its run automatic but it supposed to run when button clicked*/
 // so, you have to run/write code thats how real world example of clouser lexical scope ->
-function clickHandler(color){
-    
+function clickHandler(color){    
     function changeColor(){
         document.body.style.backgroundColor = `${color}` // In this line when execute this fun. has access color otherwise it will not work
     }
@@ -60,6 +59,6 @@ function clickHandler(color){
 document.getElementById('orange').onclick = clickHandler('orange')
 
 document.getElementById('green').onclick =clickHandler('green')
-
+/* you can do this with addeventListener but if interviewer said that use onClick -> then have to use closer syntax */
 </script>
 </html>

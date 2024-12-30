@@ -15,11 +15,7 @@
             this.library = "React"
             this.server = "https://localhost:3000"
             document.querySelector('button')
-
-            // now thats how you get access of variable and methods to this handelclick() button click then you get access of this variable and methods...
-
-
-            .addEventListener('click',this.handleClick.bind(this))
+            .addEventListener('click',this.handleClick.bind(this))  // now thats how you get access of variable and methods to this handelclick() button click then you get access of this variable and methods...
         }
         handleClick(){{
             console.log("Button Cliked")

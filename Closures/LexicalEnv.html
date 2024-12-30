@@ -21,14 +21,14 @@
 
    function outer(){
     let username = "Tushar"
-    //  console.log(secret) can't access
+    //  console.log(secret) -> can't access
     function inner(){
       let secret = "my123"
       console.log("Inner",username)
     }
     function innerTwo(){
       // console.log(secret) // can't access 
-      console.log(username)
+      console.log("inner two" ,username)
     }
     inner()
     innerTwo();
