@@ -22,26 +22,26 @@ const myarray = new Array(1,2,3,4,6,"Tushar")
 //slice and splice
 
 //=> Slice:-
-// console.log('Slice :')
-// console.log("A->",myarray)
+console.log('Slice :')
+console.log("A->",myarray)
 
-// const myn1 = myarray.slice(1,3) // 1,2 and , 3 not included
+const myn1 = myarray.slice(1,3) // 1,2 and , 3 not included
 
-// console.log(myn1)
+console.log(myn1)
 
-// console.log("B->",myarray)
+console.log("B->",myarray)
 
-// //=> Splice:-
-// console.log('Splice :')
-// console.log("A->",myarray)
+//=> Splice:-
+console.log('Splice :')
+console.log("A->",myarray)
 
-// const myn2 = myarray.splice(1,3) // 1,2 and , 3 also included.. which is not in slice
+const myn2 = myarray.splice(1,3) // 1,2 and , 3 also included.. which is not in slice
 
-// console.log(myn2)
+console.log(myn2)
 
-// console.log("B->",myarray)
+console.log("B->",myarray)
 
-// console.log(myarray)
+console.log(myarray)
 
 const a = ["a","b","c"]
 const b = ["x","y","z"]
@@ -52,17 +52,17 @@ const b = ["x","y","z"]
 // console.log(all)
 
 const all = [...a,...b]
-console.log(all)
+// console.log(all)
 
 let abc = "Tushar"
 // console.log([...abc])
 
-console.log(Array.from(abc))
-console.log(Array.from({name:"Tushar"})) // Remember this point please -> here from method not understanding which one convert in array key or value in object..
+// console.log(Array.from(abc))
+// console.log(Array.from({name:"Tushar"})) // Remember this point please -> here from method not understanding which one convert in array key or value in object..
 
 let s1 = 100
 let s2 = 200
 let s3 = 300
 
-console.log(Array.of(s1,s2,s3)) // create array from set of element...
+// console.log(Array.of(s1,s2,s3)) // create array from set of element...
 

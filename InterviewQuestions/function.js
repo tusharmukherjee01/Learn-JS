@@ -1,11 +1,13 @@
 
 // function declearations..
 
-function add(num1,num2){    
-    return num1+num2
-}
+// console.log(add(4,5))
+// function add(num1,num2){    
+//     return num1+num2
+// }
 
-//function expressions..
+// function expressions..
+// console.log(addTwo(4,5))
 // const addTwo = function(num1,num2){    
 //     return num1+num2
 // }
@@ -25,6 +27,11 @@ function add(num1,num2){
 // console.log(disPlayAddTwo(add));
 
 // // IIFE => Immediately Invoked Function Expression
+//   Why Use IIFE?
+// To prevent pollution of the global namespace.
+// To create private scopes.
+// To execute setup logic immediately.
+// To modularize and organize code effectively.
 
 // (function square(num){
 //     console.log(num*num)
@@ -80,13 +87,13 @@ function getScore(){
 
 //Q8.---------------------------------------------------------------------
 
-// functionName()
+functionName()
 function functionName(){
     console.log("functionNameRun")
 }
-// functionName()
+functionName()
 
-// both cases o/p -> functionNameRun because is hoisted completely.not like a variable
+// both cases o/p -> functionName Run because is hoisted completely.not like a variable
 
 //Q9.---------------------------------------------------------------------
 
@@ -103,9 +110,9 @@ fun()
 //Q10.---------------------------------------------------------------------
 // spread vs rest operator
 
-function adds(...args){ // rest operator when we use aa s parameter
-    console.log(args)
-}
+// function adds(...args){ // rest operator when we use aa s parameter
+//     console.log(args)
+// }
 
 // const arr = [1,4,5] 
 // adds(...arr) // spread operator when we use a argument
@@ -114,7 +121,7 @@ function adds(...args){ // rest operator when we use aa s parameter
 //  console.log(a,b)
 // }
 
-const arr = [1,2,3,4,5]
+// const arr = [1,2,3,4,5]
 // fn(...arr)
 
 //Q11.---------------------------------------------------------------------
@@ -141,10 +148,10 @@ const arr = [1,2,3,4,5]
 
 // 3. arguments keyword => can't have argument keyword in arrow function
 
-// function fn(){
-//     console.log(arguments)
-// }
-// fn(1,2,3,4,5)
+function fn(){
+    console.log(arguments)
+}
+fn(1,2,3,4,5)
 // const fn = () => {
 //     console.log(arguments)
 // }
