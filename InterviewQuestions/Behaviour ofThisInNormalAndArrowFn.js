@@ -19,6 +19,7 @@ const obj2 = {
   name: 'Mukherjee',
   regularFunction: function () {
     // Regular function inside another regular function
+
     function innerFunction() {
       console.log('Inner Function (Regular):', this.name);  // this pointing to window object and window object does't have anything like "name"
     }

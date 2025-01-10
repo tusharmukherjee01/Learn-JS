@@ -35,6 +35,7 @@ const xyz = {
    
     [property]:name // like this you have to do and not" proerty:name" 
 }
+// create a function multiplyByTwo(obj) that multiplies all numeric property values of nums by 2
 
 let nums = {
     a:100,
@@ -42,8 +43,11 @@ let nums = {
     title:"My Nums"
 }
 
+// for(key in nums){
+//   console.log(nums[key])
+// }
 multiplyByTwo(nums)
-// console.log(nums)
+console.log(nums)
 function multiplyByTwo(obj){
 
     for (const key in obj) {
@@ -51,6 +55,7 @@ function multiplyByTwo(obj){
         if(Number(obj[key])){
 
             obj[key] = 2*obj[key]
+
            }   
         }
 }
@@ -64,7 +69,7 @@ const c = {key:"c"}
 a[b] = 100
 a[c] = 200
 
-// console.log(a[b])   // a["object object"] and 2nd one also a["object object"] 2nd value is overlapping 1st value that is why output is 200
+// console.log(a[b])   // a["object object"] and 2nd one also a["object object"] "2nd" value is overlapping 1st value that is why output is 200
 // console.log(a)
 
 // Q:4
@@ -95,7 +100,7 @@ const settings = {
     level:200,
     health:500
 }
-const data = JSON.stringify(settings,["level","health"])
+const data = JSON.stringify(settings,["level","health"]) // when we pass objet and only give one or two key mentioned it will only stringify those two keys
 
 console.log(data)
 
@@ -105,7 +110,6 @@ console.log(data)
         return 2*this.radious
     },
     perimeter:()=>2*Math.PI*this.radious
-
   };
 
   console.log(shape.diameter()) // 22
@@ -119,6 +123,7 @@ console.log(data)
         last:"xyz"
     }
   }
+
    const namee = "Pochaa"
   const { namee:myName } = obj1 // thats how you can change the name
 

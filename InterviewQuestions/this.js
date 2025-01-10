@@ -63,6 +63,7 @@
 // }
 // user.getDetails()
 
+// How 'this' keyword works in class and constructor ?!...
 
 // class user {
 //     constructor(name){
@@ -114,42 +115,24 @@
 
 // let user = makeUser();
 // console.log(user.ref().name) 
+// This question is very tricky----->>>>>>
+const user = {
+    name:"Tushar",
+    loggedMe(){
+        console.log(this.name)
+    }
+}
 
-// const user = {
-//     name:"Tushar",
-//     loggedMe(){
-//         console.log(this.name)
-//     }
-// }
-
-// setTimeout(user.loggedMe,1000); // undefined because setTimeout take it as a callback which is no longer access of this user object access
+setTimeout(user.loggedMe,1000); // undefined because setTimeout take it as a callback which is no longer access of this "user" object access
 // how you can fix this code ?
 //==>>
-// setTimeout(function(){
-//     user.loggedMe()
-// },1000)
+setTimeout(function(){
+    user.loggedMe()
+},1000)
 
 // create object calculator
 
-// let calculator = {
-//     read(){
-//         this.a = +prompt("a = ",0);
-//         this.b = +prompt("b = ",0);
-//     },
-
-//     Sum(){
-//         return this.a+this.b;
-//     },
-//     mul(){
-//         return this.a * this.b;
-//     }
-
-// }
-
-// calculator.read();
-
-// console.log(calculator.Sum());
-// console.log(calculator.mul());
+//
 
 // var length = 4;
 // function callback(){
@@ -204,3 +187,29 @@ const calc = {
 
 const result = calc.add(10).multiply(5).subtract(30).add(10)
 console.log(result.total)
+
+
+
+
+
+
+
+
+const func={
+    
+    total:0,
+    
+    add:function(a){
+        this.total += a
+        return this
+    },
+    multiply:function(b){
+       
+        this.total *= b
+        return this
+    }
+
+}
+
+const res = func.add(50).multiply(2);
+console.log(res.total)
